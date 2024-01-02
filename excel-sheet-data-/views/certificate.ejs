@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Tree Donation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        #certificate {
+            width: 600px;
+            margin: 50px auto;
+            border: 2px solid #000;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .signature {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="certificate">
+        <h1>Certificate of Tree Donation</h1>
+        <h2>Presented to</h2>
+        <p><strong><%= name %></strong></p>
+        <p>In recognition of your generous contribution</p>
+        <p>Amount Donated: $<%= amount %></p>
+        <p>Number of Trees Donated: <%= treesDonated %></p>
+        <div class="signature">
+            <p>Signature:</p>
+            <!-- You can add an image or a line for a signature here -->
+        </div>
+    </div>
+</body>
+</html>
